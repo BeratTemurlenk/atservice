@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A&T Services - Uitzendbureau voor Technische Beroepen</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">A&T Services</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#jobs">Vacatures</a></li>
+            <li><a href="#about">Over Ons</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="floating-icons"></div>
+        <div class="hero-content">
+            <h1>A&T Services</h1>
+            <h2>Uw Specialist in Technische Uitzendkrachten</h2>
+            <p>Wij verbinden ervaren vakmensen met uitdagende projecten</p>
+            <div class="hero-buttons">
+                <a href="#jobs" class="cta-button">Bekijk Vacatures</a>
+                <a href="#contact" class="cta-button secondary">Direct Contact</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <!-- <div class="floating-icons"></div> -->
+        </div>
+    </section>
+
+    <!-- Jobs Section -->
+    <section id="jobs" class="jobs">
+        <h2>Onze Vacatures</h2>
+        <p class="section-subtitle">Kies uw vakgebied en neem direct contact op</p>
+        
+        <div class="jobs-grid">
+            <div class="job-card" data-job="pijpfitter">
+                <div class="job-icon">
+                    <i class="fas fa-wrench"></i>
+                </div>
+                <h3>Pijpfitter</h3>
+                <p class="job-description">Ervaren pijpfitters gezocht voor diverse projecten in de industrie en bouw.</p>
+                <div class="job-details">
+                    <span><i class="fas fa-map-marker-alt"></i> Heel Nederland</span>
+                    <span><i class="fas fa-clock"></i> Fulltime/Parttime</span>
+                </div>
+                <button class="job-contact-btn" onclick="showContactInfo('pijpfitter')">
+                    Contact Informatie
+                </button>
+            </div>
+
+            <div class="job-card" data-job="elektricien">
+                <div class="job-icon">
+                    <i class="fas fa-bolt"></i>
+                </div>
+                <h3>Elektricien</h3>
+                <p class="job-description">Gediplomeerde elektriciens voor installatie en onderhoud werkzaamheden.</p>
+                <div class="job-details">
+                    <span><i class="fas fa-map-marker-alt"></i> Heel Nederland</span>
+                    <span><i class="fas fa-clock"></i> Fulltime/Parttime</span>
+                </div>
+                <button class="job-contact-btn" onclick="showContactInfo('elektricien')">
+                    Contact Informatie
+                </button>
+            </div>
+
+            <div class="job-card" data-job="loodgieter">
+                <div class="job-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3>Loodgieter</h3>
+                <p class="job-description">Vakkundige loodgieters voor nieuwbouw en onderhoud projecten.</p>
+                <div class="job-details">
+                    <span><i class="fas fa-map-marker-alt"></i> Heel Nederland</span>
+                    <span><i class="fas fa-clock"></i> Fulltime/Parttime</span>
+                </div>
+                <button class="job-contact-btn" onclick="showContactInfo('loodgieter')">
+                    Contact Informatie
+                </button>
+            </div>
+
+            <div class="job-card" data-job="timmerman">
+                <div class="job-icon">
+                    <i class="fas fa-hammer"></i>
+                </div>
+                <h3>Timmerman</h3>
+                <p class="job-description">Ervaren timmermannen voor diverse bouwprojecten en renovaties.</p>
+                <div class="job-details">
+                    <span><i class="fas fa-map-marker-alt"></i> Heel Nederland</span>
+                    <span><i class="fas fa-clock"></i> Fulltime/Parttime</span>
+                </div>
+                <button class="job-contact-btn" onclick="showContactInfo('timmerman')">
+                    Contact Informatie
+                </button>
+            </div>
+        </div>
+
+        <!-- Contact Modal -->
+        <div id="contactModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h3 id="modalTitle">Contact Informatie</h3>
+                <div class="contact-info-modal">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div class="contact-text">
+                            <h4>Telefoon</h4>
+                            <p>+31 6 21666368</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div class="contact-text">
+                            <h4>E-mail</h4>
+                            <p>info@atservicesbv.nl</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div class="contact-text">
+                            <h4>Bereikbaarheid</h4>
+                            <p>Maandag - Vrijdag: 08:00 - 17:30</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-actions">
+                    <!-- Verwijderd: <a href="mailto:info@atservicesbv.nl" class="cta-button secondary"> -->
+                    <!-- <i class="fas fa-envelope"></i> E-mail Sturen -->
+                    <!-- </a> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>Over A&T Services</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>A&T Services is gespecialiseerd in het bemiddelen van ervaren vakmensen in de technische sector. Wij hebben jarenlange ervaring in het matchen van gekwalificeerde professionals met uitdagende projecten.</p>
+                <div class="features-grid">
+                    <div class="feature">
+                        <i class="fas fa-certificate"></i>
+                        <h4>Gecertificeerde Vakmensen</h4>
+                        <p>Al onze kandidaten zijn gediplomeerd en ervaren</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-clock"></i>
+                        <h4>Snelle Plaatsing</h4>
+                        <p>Binnen 24 uur een geschikte kandidaat</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-shield-alt"></i>
+                        <h4>Kwaliteitsgarantie</h4>
+                        <p>100% tevredenheid gegarandeerd</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-handshake"></i>
+                        <h4>Persoonlijke Service</h4>
+                        <p>Direct contact met onze specialisten</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Neem Contact Op</h2>
+        <p class="section-subtitle">Direct contact voor al uw vragen</p>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <h4>Telefoon</h4>
+                        <p>+31 6 21666368</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>E-mail</h4>
+                        <p>info@atservicesbv.nl</p>
+                    </div>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <div>
+                        <h4>Openingstijden</h4>
+                        <p>Maandag - Vrijdag: 08:00 - 17:30</p>
+                    </div>
+                </div>
+            </div>
+            
+            <form class="contact-form" action="https://formspree.io/f/mzzgyewz" method="POST">
+                <h3>Stuur ons een bericht</h3>
+                <input type="text" name="naam" placeholder="Uw Naam" required>
+                <input type="email" name="email" placeholder="Uw E-mail" required>
+                <input type="tel" name="telefoon" placeholder="Uw Telefoonnummer">
+                <select name="vakgebied" required>
+                    <option value="">Selecteer Vakgebied</option>
+                    <option value="pijpfitter">Pijpfitter</option>
+                    <option value="elektricien">Elektricien</option>
+                    <option value="loodgieter">Loodgieter</option>
+                    <option value="timmerman">Timmerman</option>
+                    <option value="other">Anders</option>
+                </select>
+                <textarea name="bericht" placeholder="Uw Bericht" required></textarea>
+                <button type="submit" class="submit-btn">Verstuur Bericht</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>A&T Services</h3>
+                <p>Uw specialist in technische uitzendkrachten.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Vakgebieden</h3>
+                <ul>
+                    <li><a href="#jobs">Pijpfitters</a></li>
+                    <li><a href="#jobs">Elektriciens</a></li>
+                    <li><a href="#jobs">Loodgieters</a></li>
+                    <li><a href="#jobs">Timmermannen</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>+31 6 21666368</p>
+                <p>info@atservicesbv.nl</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 A&T Services. Alle rechten voorbehouden.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
