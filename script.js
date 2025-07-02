@@ -23,7 +23,9 @@ function showContactInfo(jobType) {
         'pijpfitter': 'Pijpfitter',
         'elektricien': 'Elektricien',
         'loodgieter': 'Loodgieter',
-        'timmerman': 'Timmerman'
+        'timmerman': 'Timmerman',
+        'lasser': 'Lasser',
+        'monteur': 'Monteur'
     };
     
     modalTitle.textContent = `Contact Informatie - ${jobNames[jobType]}`;
