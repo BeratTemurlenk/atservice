@@ -250,7 +250,7 @@ const translations = {
       title: 'Kies een vakgebied en ontdek banen die daarbij passen',
       body:
         'Selecteer een richting en bekijk voorbeelden van functies waar we regelmatig mensen voor zoeken. Zo krijg je sneller een beeld van het werk dat bij jou past.',
-      ariaLabel: 'Vacature categorieen',
+      ariaLabel: 'Vacature categorieën',
       cards: {
         bouw: {
           title: 'Bouw',
@@ -354,7 +354,7 @@ const translations = {
       },
     },
     contact: {
-      title: 'Neem Contact Op',
+      title: 'Neem contact op',
       body: 'Direct contact voor al uw vragen',
       phoneTitle: 'Telefoon',
       emailTitle: 'E-mail',
@@ -449,7 +449,7 @@ const translations = {
     },
     works: {
       visualLabel: 'Working with us',
-      visualTitle: 'Faster interviews, faster to work',
+      visualTitle: 'Faster contact, faster starts',
       title: 'We make applying faster, more human and much clearer',
       body:
         'No noise and no endless steps. Atservice helps you find roles that genuinely fit and guides you from first contact to your start date.',
@@ -457,7 +457,7 @@ const translations = {
       secondary: 'Contact us',
     },
     employers: {
-      title: 'A new bureau that stands out through attention, speed and short lines',
+      title: 'A new agency built on attention, speed and short lines',
       body:
         'As a new bureau, we deliberately choose an honest and direct approach. What we bring is committed contact, fast follow-up and a clear approach in logistics, engineering, cleaning, support and construction. We are also active as a contractor and work on building projects and homes.',
       primary: 'Post a vacancy',
