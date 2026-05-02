@@ -9559,6 +9559,76 @@ body.apple-theme .cta {
   }
 }
 
+@media (max-width: 700px) {
+  .employer-visual {
+    min-height: 500px;
+  }
+
+  .employer-visual .visual-card {
+    left: 20px;
+    right: 20px;
+    top: 20px;
+    padding: 20px;
+  }
+
+  .employer-visual .visual-card strong {
+    font-size: 22px;
+    line-height: 1.14;
+  }
+
+  .employer-visual .visual-chip,
+  .employer-visual .visual-chip.alt {
+    left: 20px;
+    right: auto;
+    max-width: calc(100% - 40px);
+    white-space: normal;
+    text-align: center;
+  }
+
+  .employer-visual .visual-chip.alt {
+    bottom: 92px;
+  }
+
+  .employer-visual .visual-chip {
+    bottom: 24px;
+  }
+}
+
+@media (max-width: 520px) {
+  .employer-visual {
+    min-height: 540px;
+  }
+
+  .employer-visual .visual-card {
+    left: 16px;
+    right: 16px;
+    top: 16px;
+    padding: 18px;
+  }
+
+  .employer-visual .visual-card strong {
+    font-size: 19px;
+  }
+
+  .employer-visual .visual-chip,
+  .employer-visual .visual-chip.alt {
+    left: 16px;
+    max-width: calc(100% - 32px);
+    min-height: 40px;
+    padding: 10px 14px;
+    font-size: 13px;
+    line-height: 1.35;
+  }
+
+  .employer-visual .visual-chip.alt {
+    bottom: 88px;
+  }
+
+  .employer-visual .visual-chip {
+    bottom: 16px;
+  }
+}
+
 /* Remove duplicate background layer under candidate section */
 #werken-via-ons::before {
   content: none;

@@ -88,12 +88,22 @@ const categoryIcons = {
   techniek: `
     <svg viewBox="0 0 24 24" focusable="false" aria-hidden="true">
       <path
-        d="M14.5 6.5A4.5 4.5 0 0 0 17 13L9 21L3 15L11 7A4.5 4.5 0 0 0 17.5 2.5L14 6L14.5 6.5Z"
+        d="M19.4 15A1.7 1.7 0 0 0 19.75 16.87L19.81 16.93A2 2 0 1 1 16.98 19.76L16.92 19.7A1.7 1.7 0 0 0 15.05 19.35A1.7 1.7 0 0 0 14 20.9V21A2 2 0 1 1 10 21V20.9A1.7 1.7 0 0 0 8.95 19.35A1.7 1.7 0 0 0 7.08 19.7L7.02 19.76A2 2 0 1 1 4.19 16.93L4.25 16.87A1.7 1.7 0 0 0 4.6 15A1.7 1.7 0 0 0 3.1 14H3A2 2 0 1 1 3 10H3.1A1.7 1.7 0 0 0 4.6 9A1.7 1.7 0 0 0 4.25 7.13L4.19 7.07A2 2 0 1 1 7.02 4.24L7.08 4.3A1.7 1.7 0 0 0 8.95 4.65A1.7 1.7 0 0 0 10 3.1V3A2 2 0 1 1 14 3V3.1A1.7 1.7 0 0 0 15.05 4.65A1.7 1.7 0 0 0 16.92 4.3L16.98 4.24A2 2 0 1 1 19.81 7.07L19.75 7.13A1.7 1.7 0 0 0 19.4 9A1.7 1.7 0 0 0 20.9 10H21A2 2 0 1 1 21 14H20.9A1.7 1.7 0 0 0 19.4 15Z"
         fill="none"
         stroke="currentColor"
         stroke-linecap="round"
         stroke-linejoin="round"
-        stroke-width="1.8"
+        stroke-width="1.6"
+      />
+      <circle
+        cx="12"
+        cy="12"
+        r="3"
+        fill="none"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="1.6"
       />
     </svg>
   `,
