@@ -1,292 +1,546 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="nl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>A&T Services - Uitzendbureau voor Technische Beroepen</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="logo">A&T Services</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#jobs">Vacatures</a></li>
-            <li><a href="#about">Over Ons</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atservice | Vind werk dat bij je past</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260502-2157" />
+  </head>
+  <body>
+    <div class="page-orbs" aria-hidden="true">
+      <span class="orb orb-one"></span>
+      <span class="orb orb-two"></span>
+      <span class="orb orb-three"></span>
+      <span class="orb orb-four"></span>
+    </div>
+
+    <div class="page-language-switch">
+      <div class="language-toggle" aria-label="Language switch">
+        <button class="language-button is-active" type="button" data-language="nl" aria-pressed="true">
+          NL
+        </button>
+        <button class="language-button" type="button" data-language="en" aria-pressed="false">
+          EN
+        </button>
+      </div>
+    </div>
+
+    <header class="hero">
+      <div class="container">
+        <nav class="topbar">
+          <a class="brand" href="#">
+            <span class="brand-mark">
+              <img src="logo-atservice.png" alt="Atservice logo" />
+            </span>
+            <span class="brand-copy">
+              <strong>Atservice</strong>
+              <small>Uitzendbureau met energie</small>
+            </span>
+          </a>
+
+          <div class="nav-links">
+            <a href="#vacatures">Vacatures</a>
+            <a href="#werkgevers">Werkgevers</a>
+            <a href="#over-ons">Over ons</a>
+            <a href="#contact">Contact</a>
+          </div>
+
+          <div class="nav-actions">
+            <a class="ghost-button" href="tel:+31621666368">+31 6 2166 6368</a>
+            <a class="outline-button" href="#vacatures">Bekijk vacatures</a>
+          </div>
+        </nav>
+
+        <section class="hero-layout hero-intro-panel reveal">
+          <div class="hero-intro-copy">
+            <h1>Wij brengen mensen en werk met energie samen.</h1>
+            <p class="hero-subheadline">
+              Atservice is een uitzendbureau en aannemersbedrijf, actief in logistiek, techniek,
+              piping, bouw en support. Naast het verbinden van werkgevers en professionals voeren wij
+              ook aannemerswerk uit en realiseren wij bouwprojecten, waaronder woningen.
+            </p>
+
+            <div class="hero-actions">
+              <a class="primary-button" href="#vacatures">Bekijk vacatures</a>
+              <a class="secondary-button" href="mailto:info@atservicesbv.nl">Neem contact op</a>
+            </div>
+
+            <p class="hero-intro-note">
+              Nieuw, betrokken en gericht op duurzame matches voor werkgevers en kandidaten.
+            </p>
+          </div>
+        </section>
+
+      </div>
+    </header>
+
+    <main>
+      <section id="usp" class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2>Geen groot verhaal, maar een bureau dat snel schakelt en dichtbij blijft</h2>
+            <p>
+              We bouwen Atservice vanaf de basis op. Dat betekent: persoonlijk contact, directe
+              communicatie en volledige aandacht voor elke vacature of kandidaat.
+            </p>
+          </div>
+
+          <div class="usp-grid">
+            <article class="usp-block reveal">
+              <div class="usp-icon">01</div>
+              <h3>Snel schakelen</h3>
+              <p>Binnen korte tijd zicht op vacatures, kandidaten en concrete vervolgstappen.</p>
+            </article>
+            <article class="usp-block warm reveal">
+              <div class="usp-icon">02</div>
+              <h3>Menselijk contact</h3>
+              <p>Persoonlijke begeleiding die zorgt voor vertrouwen en een betere match.</p>
+            </article>
+            <article class="usp-block cool reveal">
+              <div class="usp-icon">03</div>
+              <h3>Werk dat past</h3>
+              <p>We koppelen op ambitie, tempo en cultuur zodat plaatsingen langer blijven werken.</p>
+            </article>
+          </div>
         </div>
-    </nav>
+      </section>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="floating-icons"></div>
-        <div class="hero-content">
-            <h1>A&T Services</h1>
-            <h2>Uw Specialist in Technische Uitzendkrachten</h2>
-            <p>Wij verbinden ervaren vakmensen met uitdagende projecten</p>
-            <div class="hero-buttons">
-                <a href="#jobs" class="cta-button">Bekijk Vacatures</a>
-                <a href="#contact" class="cta-button secondary">Direct Contact</a>
+      <section id="vacatures" class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2>Kies een vakgebied en ontdek banen die daarbij passen</h2>
+            <p>
+              Selecteer een richting en bekijk voorbeelden van functies waar we regelmatig mensen
+              voor zoeken. Zo krijg je sneller een beeld van het werk dat bij jou past.
+            </p>
+          </div>
+
+          <div class="job-category-grid reveal" role="tablist" aria-label="Vacature categorieen">
+            <button class="job-category-card is-active" type="button" data-job-category="bouw" aria-pressed="true">
+              <span class="job-category-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path
+                    d="M13 3L20 10L17.75 12.25L15.75 10.25L11 15V20H8V17L13.25 11.75L11.25 9.75L13 8L10 5L13 3Z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                  />
+                </svg>
+              </span>
+              <strong>Bouw</strong>
+              <span>Werk op projecten in renovatie, montage en uitvoering.</span>
+            </button>
+            <button class="job-category-card" type="button" data-job-category="ict" aria-pressed="false">
+              <span class="job-category-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <rect
+                    x="4"
+                    y="5.5"
+                    width="16"
+                    height="10"
+                    rx="2"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                  />
+                  <path
+                    d="M9 18.5H15M12 15.5V18.5"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                  />
+                </svg>
+              </span>
+              <strong>ICT</strong>
+              <span>Van development tot support en beheer bij moderne teams.</span>
+            </button>
+            <button class="job-category-card" type="button" data-job-category="infra" aria-pressed="false">
+              <span class="job-category-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path
+                    d="M3 17H21M6 17V13M12 17V9M18 17V11M4 21H20"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                  />
+                </svg>
+              </span>
+              <strong>Infra</strong>
+              <span>Banen in ondergrondse aanleg, civiele techniek en buitenwerk.</span>
+            </button>
+            <button class="job-category-card" type="button" data-job-category="schoonmaak" aria-pressed="false">
+              <span class="job-category-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path
+                    d="M14.5 4L10 8.5"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                  />
+                  <path
+                    d="M10 8.5L15 18"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                  />
+                  <path
+                    d="M6.5 18H17.5M8 18L9.5 21M11 18L12.5 21M14 18L15.5 21"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                  />
+                </svg>
+              </span>
+              <strong>Schoonmaak</strong>
+              <span>Voor betrouwbare mensen in facilitair werk en onderhoud.</span>
+            </button>
+            <button class="job-category-card" type="button" data-job-category="techniek" aria-pressed="false">
+              <span class="job-category-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" focusable="false">
+                  <path
+                    d="M14.5 6.5A4.5 4.5 0 0 0 17 13L9 21L3 15L11 7A4.5 4.5 0 0 0 17.5 2.5L14 6L14.5 6.5Z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.8"
+                  />
+                </svg>
+              </span>
+              <strong>Techniek</strong>
+              <span>Technische functies in installatie, service en productie.</span>
+            </button>
+          </div>
+
+          <div class="job-results-panel reveal">
+            <div class="job-results-intro">
+              <h3 id="job-results-title">Bouw</h3>
+              <p id="job-results-copy">
+                Een greep uit functies binnen bouw waar we regelmatig mensen voor zoeken.
+              </p>
             </div>
+
+            <div id="job-results-grid" class="job-results-grid" aria-live="polite"></div>
+          </div>
         </div>
-        <div class="hero-image">
-            <!-- <div class="floating-icons"></div> -->
+      </section>
+
+      <section id="werken-via-ons" class="section section-soft">
+        <div class="container">
+          <div class="section-split">
+            <div class="split-visual reveal">
+              <div class="visual-panel">
+                <div class="visual-shape visual-orange"></div>
+                <div class="visual-shape visual-blue"></div>
+                <div class="visual-card candidate-visual-card">
+                  <span>Werken via ons</span>
+                  <strong>Sneller in gesprek, sneller aan de slag</strong>
+                </div>
+              </div>
+            </div>
+
+            <div class="split-copy reveal">
+              <h2>We maken solliciteren sneller, menselijker en veel duidelijker</h2>
+              <p>
+                Geen ruis, geen eindeloze stappen. Atservice helpt je aan vacatures die echt bij je
+                passen en begeleidt je van eerste contact tot startdatum.
+              </p>
+              <div class="split-actions">
+                <a class="primary-button" href="#vacatures">Bekijk vacatures</a>
+                <a class="secondary-button" href="mailto:info@atservicesbv.nl">Neem contact op</a>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Jobs Section -->
-    <section id="jobs" class="jobs">
-        <h2>Onze Vacatures</h2>
-        <p class="section-subtitle">Kies uw vakgebied en neem direct contact op</p>
-        
-        <div class="jobs-grid">
-            <div class="job-card" data-job="pijpfitter">
-                <div class="job-icon">
-                    <i class="fas fa-wrench"></i>
-                </div>
-                <h3>Pijpfitter</h3>
-                <p class="job-description">Ervaren pijpfitters gezocht voor diverse projecten in de industrie en bouw.</p>
-                <div class="job-details">
-                    <span><i class="fas fa-map-marker-alt"></i> Heel Nederland</span>
-                    <span><i class="fas fa-clock"></i> Fulltime/Parttime</span>
-                </div>
-                <button class="job-contact-btn" onclick="showContactInfo('pijpfitter')">
-                    Contact Informatie
-                </button>
+      <section id="werkgevers" class="section">
+        <div class="container">
+          <div class="section-split reverse">
+            <div class="split-copy reveal">
+              <h2>Een nieuw bureau dat juist sterk is in aandacht, snelheid en korte lijnen</h2>
+              <p>
+                Als nieuw bureau kiezen we bewust voor een eerlijke en directe aanpak. Wat we wel brengen is
+                betrokken contact, snelle opvolging en een duidelijke aanpak in logistiek, techniek,
+                schoonmaak, support en bouw. Daarnaast zijn wij ook actief als aannemer en werken wij
+                aan bouwprojecten en woningen.
+              </p>
+              <div class="split-actions">
+                <a
+                  class="primary-button"
+                  href="mailto:info@atservicesbv.nl?subject=Plaats%20vacature%20via%20Atservice"
+                >
+                  Plaats vacature
+                </a>
+                <a class="secondary-button" href="mailto:info@atservicesbv.nl">Plan kennismaking</a>
+              </div>
             </div>
 
-            <div class="job-card" data-job="elektricien">
-                <div class="job-icon">
-                    <i class="fas fa-bolt"></i>
+            <div class="split-visual reveal">
+              <div class="visual-panel employer-visual">
+                <div class="visual-card card-dark">
+                  <span>Starter met focus</span>
+                  <strong>Direct contact, korte lijnen en volle aandacht voor elke aanvraag</strong>
                 </div>
-                <h3>Elektricien</h3>
-                <p class="job-description">Gediplomeerde elektriciens voor installatie en onderhoud werkzaamheden.</p>
-                <div class="job-details">
-                    <span><i class="fas fa-map-marker-alt"></i> Heel Nederland</span>
-                    <span><i class="fas fa-clock"></i> Fulltime/Parttime</span>
-                </div>
-                <button class="job-contact-btn" onclick="showContactInfo('elektricien')">
-                    Contact Informatie
-                </button>
+                <div class="visual-chip">Nieuw bureau, snelle opvolging</div>
+                <div class="visual-chip alt">Focus op logistiek, techniek en support</div>
+              </div>
             </div>
-
-            <div class="job-card" data-job="loodgieter">
-                <div class="job-icon">
-                    <i class="fas fa-tools"></i>
-                </div>
-                <h3>Loodgieter</h3>
-                <p class="job-description">Vakkundige loodgieters voor nieuwbouw en onderhoud projecten.</p>
-                <div class="job-details">
-                    <span><i class="fas fa-map-marker-alt"></i> Heel Nederland</span>
-                    <span><i class="fas fa-clock"></i> Fulltime/Parttime</span>
-                </div>
-                <button class="job-contact-btn" onclick="showContactInfo('loodgieter')">
-                    Contact Informatie
-                </button>
-            </div>
-
-            <div class="job-card" data-job="timmerman">
-                <div class="job-icon">
-                    <i class="fas fa-hammer"></i>
-                </div>
-                <h3>Timmerman</h3>
-                <p class="job-description">Ervaren timmermannen voor diverse bouwprojecten en renovaties.</p>
-                <div class="job-details">
-                    <span><i class="fas fa-map-marker-alt"></i> Heel Nederland</span>
-                    <span><i class="fas fa-clock"></i> Fulltime/Parttime</span>
-                </div>
-                <button class="job-contact-btn" onclick="showContactInfo('timmerman')">
-                    Contact Informatie
-                </button>
-            </div>
-
-            <div class="job-card" data-job="lasser">
-                <div class="job-icon">
-                    <i class="fas fa-fire"></i>
-                </div>
-                <h3>Lasser</h3>
-                <p class="job-description">Ervaren lassers gezocht voor MIG/MAG, TIG en elektrode laswerkzaamheden.</p>
-                <div class="job-details">
-                    <span><i class="fas fa-map-marker-alt"></i> Heel Nederland</span>
-                    <span><i class="fas fa-clock"></i> Fulltime/Parttime</span>
-                </div>
-                <button class="job-contact-btn" onclick="showContactInfo('lasser')">
-                    Contact Informatie
-                </button>
-            </div>
-
-            <div class="job-card" data-job="monteur">
-                <div class="job-icon">
-                    <i class="fas fa-cogs"></i>
-                </div>
-                <h3>Monteur</h3>
-                <p class="job-description">Monteurs gezocht voor montage, onderhoud en storingsdienst in diverse sectoren.</p>
-                <div class="job-details">
-                    <span><i class="fas fa-map-marker-alt"></i> Heel Nederland</span>
-                    <span><i class="fas fa-clock"></i> Fulltime/Parttime</span>
-                </div>
-                <button class="job-contact-btn" onclick="showContactInfo('monteur')">
-                    Contact Informatie
-                </button>
-            </div>
+          </div>
         </div>
+      </section>
 
-        <!-- Contact Modal -->
-        <div id="contactModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <h3 id="modalTitle">Contact Informatie</h3>
-                <div class="contact-info-modal">
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div class="contact-text">
-                            <h4>Telefoon</h4>
-                            <p>+31 6 21666368</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div class="contact-text">
-                            <h4>E-mail</h4>
-                            <p>info@atservicesbv.nl</p>
-                        </div>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-clock"></i>
-                        <div class="contact-text">
-                            <h4>Bereikbaarheid</h4>
-                            <p>Maandag - Vrijdag: 08:00 - 17:30</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-actions">
-                    <!-- Verwijderd: <a href="mailto:info@atservicesbv.nl" class="cta-button secondary"> -->
-                    <!-- <i class="fas fa-envelope"></i> E-mail Sturen -->
-                    <!-- </a> -->
-                </div>
-            </div>
+      <section id="over-ons" class="section">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2>Uitzenden en aannemen vanuit een heldere aanpak</h2>
+            <p>
+              Atservice is gestart vanuit de overtuiging dat uitzenden en bouwen persoonlijker,
+              duidelijker en sneller kunnen. Daarom combineren wij een directe uitzendaanpak met
+              werkzaamheden als aannemer, waaronder bouwprojecten en woningen.
+            </p>
+          </div>
+
+          <div class="starter-grid">
+            <article class="starter-panel starter-panel-large reveal">
+              <span class="starter-eyebrow">Waarom dit werkt</span>
+              <h3>We zijn klein gestart, dus aandacht is geen belofte maar onze werkwijze</h3>
+              <p>
+                Werkgevers krijgen bij ons geen standaard traject, maar snel contact, duidelijke
+                terugkoppeling en een bureau dat bereikbaar blijft. Kandidaten krijgen begeleiding
+                zonder ruis, zodat de volgende stap helder voelt.
+              </p>
+              <div class="starter-actions">
+                <a class="primary-button" href="#contact">Plan een kennismaking</a>
+                <a class="secondary-button" href="mailto:info@atservicesbv.nl?subject=CV%20sturen%20via%20Atservice">Stuur je cv</a>
+              </div>
+            </article>
+
+            <article class="starter-panel reveal">
+              <span class="starter-number">01</span>
+              <h3>Direct contact</h3>
+              <p>Geen lange routes. Je spreekt snel met iemand die echt met je aanvraag bezig is.</p>
+            </article>
+
+            <article class="starter-panel reveal">
+              <span class="starter-number">02</span>
+              <h3>Focus op een paar richtingen</h3>
+              <p>We richten ons op logistiek, techniek, schoonmaak, bouw en supportfuncties.</p>
+            </article>
+
+            <article class="starter-panel reveal">
+              <span class="starter-number">03</span>
+              <h3>Eerlijk en betrokken</h3>
+              <p>We beloven geen groot netwerk, maar wel inzet, snelheid en duidelijke communicatie.</p>
+            </article>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <h2>Over A&T Services</h2>
-        <div class="about-content">
-            <div class="about-text">
-                <p>A&T Services is gespecialiseerd in het bemiddelen van ervaren vakmensen in de technische sector. Wij hebben jarenlange ervaring in het matchen van gekwalificeerde professionals met uitdagende projecten.</p>
-                <div class="features-grid">
-                    <div class="feature">
-                        <i class="fas fa-certificate"></i>
-                        <h4>Gecertificeerde Vakmensen</h4>
-                        <p>Al onze kandidaten zijn gediplomeerd en ervaren</p>
-                    </div>
-                    <div class="feature">
-                        <i class="fas fa-clock"></i>
-                        <h4>Snelle Plaatsing</h4>
-                        <p>Binnen 24 uur een geschikte kandidaat</p>
-                    </div>
-                    <div class="feature">
-                        <i class="fas fa-shield-alt"></i>
-                        <h4>Kwaliteitsgarantie</h4>
-                        <p>100% tevredenheid gegarandeerd</p>
-                    </div>
-                    <div class="feature">
-                        <i class="fas fa-handshake"></i>
-                        <h4>Persoonlijke Service</h4>
-                        <p>Direct contact met onze specialisten</p>
-                    </div>
-                </div>
-            </div>
+      <section id="startklaar" class="section section-soft">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2>Duidelijk voor werkgevers en kandidaten</h2>
+            <p>
+              We houden de eerste stap laagdrempelig. Of je nu iemand zoekt of zelf aan de slag wilt:
+              je weet meteen wat je van ons kunt verwachten.
+            </p>
+          </div>
+
+          <div class="audience-grid">
+            <article class="audience-card reveal">
+              <span class="starter-eyebrow">Voor werkgevers</span>
+              <h3>Zo kunnen we je nu al helpen</h3>
+              <ul class="audience-list">
+                <li>Vrijblijvend sparren over vacatures en profiel.</li>
+                <li>Snel contact over beschikbaarheid en vervolgstappen.</li>
+                <li>Focus op praktische functies waar tempo en betrouwbaarheid tellen.</li>
+              </ul>
+              <a class="primary-button" href="mailto:info@atservicesbv.nl?subject=Vrijblijvende%20kennismaking%20Atservice">Vraag een kennismaking aan</a>
+            </article>
+
+            <article class="audience-card reveal">
+              <span class="starter-eyebrow">Voor kandidaten</span>
+              <h3>Zo kom je bij ons binnen</h3>
+              <ul class="audience-list">
+                <li>Bekijk functies per vakgebied en reageer snel.</li>
+                <li>Stuur je cv of bel direct voor een eerste gesprek.</li>
+                <li>We denken mee over werk dat past bij jouw tempo en ervaring.</li>
+              </ul>
+              <a class="secondary-button" href="mailto:info@atservicesbv.nl?subject=Inschrijven%20bij%20Atservice">Schrijf je in</a>
+            </article>
+          </div>
         </div>
-    </section>
+      </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <h2>Neem Contact Op</h2>
-        <p class="section-subtitle">Direct contact voor al uw vragen</p>
-        
-        <div class="contact-container">
-            <div class="contact-info">
-                <div class="info-item">
-                    <i class="fas fa-phone"></i>
-                    <div>
-                        <h4>Telefoon</h4>
-                        <p>+31 6 21666368</p>
-                    </div>
+      <section id="contact" class="section">
+        <div class="container">
+          <div class="section-heading contact-heading reveal">
+            <h2>Neem Contact Op</h2>
+            <p>Direct contact voor al uw vragen</p>
+          </div>
+
+          <div class="contact-message-layout">
+            <div class="contact-info-list">
+              <article class="contact-info-card reveal">
+                <div class="contact-info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <path
+                      d="M6.5 4.5H9L10.5 8.5L8.75 10.25C9.7 12.2 11.3 13.8 13.25 14.75L15 13L19 14.5V17.5C19 18.33 18.33 19 17.5 19C10.6 19 5 13.4 5 6.5C5 5.67 5.67 5 6.5 4.5Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                 </div>
-                <div class="info-item">
-                    <i class="fas fa-envelope"></i>
-                    <div>
-                        <h4>E-mail</h4>
-                        <p>info@atservicesbv.nl</p>
-                    </div>
+                <div class="contact-info-copy">
+                  <h3>Telefoon</h3>
+                  <p>+31 6 21666368</p>
                 </div>
-                <div class="info-item">
-                    <i class="fas fa-clock"></i>
-                    <div>
-                        <h4>Openingstijden</h4>
-                        <p>Maandag - Vrijdag: 08:00 - 17:30</p>
-                    </div>
+              </article>
+
+              <article class="contact-info-card reveal">
+                <div class="contact-info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <path
+                      d="M4 6.5C4 5.67 4.67 5 5.5 5H18.5C19.33 5 20 5.67 20 6.5V17.5C20 18.33 19.33 19 18.5 19H5.5C4.67 19 4 18.33 4 17.5V6.5ZM6.2 7L12 11.2L17.8 7H6.2Z"
+                      fill="currentColor"
+                    />
+                  </svg>
                 </div>
+                <div class="contact-info-copy">
+                  <h3>E-mail</h3>
+                  <p>info@atservicesbv.nl</p>
+                </div>
+              </article>
+
+              <article class="contact-info-card reveal">
+                <div class="contact-info-icon" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" focusable="false">
+                    <path
+                      d="M12 5A7 7 0 1 0 12 19A7 7 0 0 0 12 5ZM12.75 8V11.5L15.5 13.15L14.75 14.4L11.25 12.3V8H12.75Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </div>
+                <div class="contact-info-copy">
+                  <h3>Openingstijden</h3>
+                  <p>Maandag - Vrijdag: 08:00 - 17:30</p>
+                </div>
+              </article>
             </div>
-            
-            <form class="contact-form" action="https://formspree.io/f/mzzgyewz" method="POST">
-                <h3>Stuur ons een bericht</h3>
-                <input type="text" name="naam" placeholder="Uw Naam" required>
-                <input type="email" name="email" placeholder="Uw E-mail" required>
-                <input type="tel" name="telefoon" placeholder="Uw Telefoonnummer">
-                <select name="vakgebied" required>
-                    <option value="">Selecteer Vakgebied</option>
-                    <option value="pijpfitter">Pijpfitter</option>
-                    <option value="elektricien">Elektricien</option>
-                    <option value="loodgieter">Loodgieter</option>
-                    <option value="timmerman">Timmerman</option>
-                    <option value="lasser">Lasser</option>
-                    <option value="monteur">Monteur</option>
-                    <option value="other">Anders</option>
-                </select>
-                <textarea name="bericht" placeholder="Uw Bericht" required></textarea>
-                <button type="submit" class="submit-btn">Verstuur Bericht</button>
+
+            <form
+              class="contact-message-form reveal"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+            >
+              <input type="hidden" name="access_key" value="c221c915-a00f-420b-82a2-0303e5d362a9" />
+              <input type="hidden" name="subject" value="Nieuw bericht via Atservice website" />
+              <input type="hidden" name="from_name" value="Atservice website" />
+              <input type="checkbox" name="botcheck" class="contact-botcheck" tabindex="-1" autocomplete="off" />
+
+              <h3>Stuur ons een bericht</h3>
+
+              <input aria-label="Uw Naam" name="naam" type="text" placeholder="Uw Naam" required />
+              <input
+                aria-label="Uw E-mail"
+                name="email"
+                type="email"
+                placeholder="Uw E-mail"
+                required
+              />
+              <input
+                aria-label="Uw Telefoonnummer"
+                name="telefoonnummer"
+                type="tel"
+                placeholder="Uw Telefoonnummer"
+              />
+
+              <select aria-label="Selecteer Vakgebied" name="vakgebied" required>
+                <option value="" selected disabled>Selecteer Vakgebied</option>
+                <option value="bouw">Bouw</option>
+                <option value="ict">ICT</option>
+                <option value="infra">Infra</option>
+                <option value="schoonmaak">Schoonmaak</option>
+                <option value="techniek">Techniek</option>
+              </select>
+
+              <textarea
+                aria-label="Uw Bericht"
+                name="bericht"
+                placeholder="Uw Bericht"
+                rows="5"
+                required
+              ></textarea>
+
+              <button class="primary-button contact-submit" type="submit">Verstuur Bericht</button>
             </form>
+          </div>
         </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>A&T Services</h3>
-                <p>Uw specialist in technische uitzendkrachten.</p>
-            </div>
-            <div class="footer-section">
-                <h3>Vakgebieden</h3>
-                <ul>
-                    <li><a href="#jobs">Pijpfitters</a></li>
-                    <li><a href="#jobs">Elektriciens</a></li>
-                    <li><a href="#jobs">Loodgieters</a></li>
-                    <li><a href="#jobs">Timmermannen</a></li>
-                    <li><a href="#jobs">Lassers</a></li>
-                    <li><a href="#jobs">Monteurs</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h3>Contact</h3>
-                <p>+31 6 21666368</p>
-                <p>info@atservicesbv.nl</p>
-            </div>
+    <footer class="site-footer-panel">
+      <div class="container">
+        <div class="footer-panel-grid">
+          <div class="footer-panel-brand">
+            <a class="brand" href="#">
+              <span class="brand-mark">
+                <img src="logo-atservice.png" alt="Atservice logo" />
+              </span>
+              <span class="brand-copy">
+                <strong>Atservice</strong>
+                <small>Uitzendbureau met energie</small>
+              </span>
+            </a>
+            <p>
+              Een nieuw uitzendbureau met een persoonlijke aanpak, korte lijnen en focus op
+              duurzame matches.
+            </p>
+          </div>
+
+          <div class="footer-panel-links">
+            <h3>Snel naar</h3>
+            <a href="#vacatures">Vacatures</a>
+            <a href="#werkgevers">Werkgevers</a>
+            <a href="#over-ons">Over ons</a>
+            <a href="#contact">Contact</a>
+          </div>
+
+          <div class="footer-panel-links">
+            <h3>Contact</h3>
+            <a href="tel:+31621666368">+31 6 2166 6368</a>
+            <a href="mailto:info@atservicesbv.nl">info@atservicesbv.nl</a>
+            <span>Maandag - Vrijdag: 08:00 - 17:30</span>
+          </div>
         </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 A&T Services. Alle rechten voorbehouden.</p>
+
+        <div class="footer-panel-bottom">
+          <span>Atservice</span>
+          <span>Persoonlijk, snel en betrokken</span>
         </div>
+      </div>
     </footer>
 
-    <script src="script.js"></script>
-</body>
-</html> 
+    <script src="script.js?v=20260502-2134"></script>
+  </body>
+</html>
