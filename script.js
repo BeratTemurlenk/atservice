@@ -582,7 +582,8 @@ function updateStaticText() {
   if (languageToggle) languageToggle.setAttribute('aria-label', t.languageLabel)
 
   setText('.topbar .brand-copy small', t.brandTagline)
-  setText('.site-footer-panel .brand-copy small', t.brandTagline)
+  setText('.mobile-topbar .mobile-brand-copy small', t.brandTagline)
+  setText('.site-footer-panel .footer-brand-copy small', t.brandTagline)
 
   setTextList('.topbar .nav-links a', [t.nav.vacatures, t.nav.werkgevers, t.nav.about, t.nav.contact])
   setText('.nav-actions .outline-button', t.nav.viewJobs)
