@@ -1,7 +1,7 @@
 const mailtoBase = 'info@atservicesbv.nl'
 const languageStorageKey = 'atservice-language'
 let currentLanguage = 'nl'
-let activeCategoryKey = 'bouw'
+let activeCategoryKey = null
 let renderCategoryRef = null
 
 function openMail(subject) {
@@ -778,8 +778,16 @@ function initJobExplorer() {
   const grid = document.getElementById('job-results-grid')
   const title = document.getElementById('job-results-title')
   const copy = document.getElementById('job-results-copy')
+  const panel = document.querySelector('.job-results-panel')
 
-  if (!buttons.length || !grid || !title || !copy) return
+  if (!buttons.length || !grid || !title || !copy || !panel) return
+
+  function hideResults() {
+    panel.hidden = true
+    panel.setAttribute('aria-hidden', 'true')
+    panel.classList.remove('is-visible')
+    grid.replaceChildren()
+  }
 
   function renderCategory(categoryKey) {
     const category = localizedJobCategories[currentLanguage][categoryKey]
@@ -793,6 +801,9 @@ function initJobExplorer() {
       button.setAttribute('aria-pressed', String(isActive))
     })
 
+    panel.hidden = false
+    panel.setAttribute('aria-hidden', 'false')
+    panel.classList.add('is-visible')
     title.textContent = category.title
     copy.textContent = category.intro
     grid.replaceChildren(...category.jobs.map((job) => createJobCard(job, categoryKey)))
@@ -831,7 +842,7 @@ function initJobExplorer() {
     }
   })
 
-  renderCategory(activeCategoryKey)
+  hideResults()
 }
 
 function initLanguageSwitcher() {
@@ -843,7 +854,7 @@ function initLanguageSwitcher() {
       currentLanguage = selectedLanguage
       localStorage.setItem(languageStorageKey, currentLanguage)
       updateStaticText()
-      if (renderCategoryRef) renderCategoryRef(activeCategoryKey)
+      if (renderCategoryRef && activeCategoryKey) renderCategoryRef(activeCategoryKey)
     })
   })
 }
@@ -879,6 +890,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initLanguageSwitcher()
   initReveal()
   updateStaticText()
-  if (renderCategoryRef) renderCategoryRef(activeCategoryKey)
+  if (renderCategoryRef && activeCategoryKey) renderCategoryRef(activeCategoryKey)
 })
 
