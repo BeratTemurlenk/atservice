@@ -10571,4 +10571,100 @@ main {
   }
 }
 
+/* Final mobile safety overrides */
+@media (max-width: 820px) {
+  :root {
+    --container: calc(100vw - 24px);
+  }
+
+  .container,
+  .section > .container,
+  .site-footer-panel .container {
+    width: calc(100vw - 24px);
+    max-width: calc(100vw - 24px);
+    margin-inline: auto;
+  }
+
+  .hero {
+    padding-top: 72px;
+  }
+
+  .hero-layout,
+  #usp,
+  #vacatures,
+  #werken-via-ons,
+  #werkgevers,
+  #over-ons,
+  #startklaar,
+  #contact {
+    width: calc(100vw - 24px);
+    max-width: calc(100vw - 24px);
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-layout {
+    display: block;
+    padding: 28px 18px;
+  }
+
+  .hero-intro-panel,
+  .hero-intro-copy,
+  .split-copy,
+  .split-visual {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+  }
+
+  .hero-intro-copy h1,
+  .hero-intro-copy .hero-subheadline,
+  .hero-intro-note {
+    max-width: 100%;
+  }
+
+  .job-results-grid,
+  .job-category-grid,
+  .starter-grid,
+  .audience-grid,
+  .contact-message-layout,
+  .footer-panel-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  :root {
+    --container: calc(100vw - 20px);
+  }
+
+  .container,
+  .section > .container,
+  .site-footer-panel .container,
+  .hero-layout,
+  #usp,
+  #vacatures,
+  #werken-via-ons,
+  #werkgevers,
+  #over-ons,
+  #startklaar,
+  #contact {
+    width: calc(100vw - 20px);
+    max-width: calc(100vw - 20px);
+  }
+
+  .hero {
+    padding-top: 76px;
+  }
+
+  .page-language-switch {
+    top: 10px;
+    right: 10px;
+  }
+
+  .brand-copy {
+    min-width: 0;
+  }
+}
+
 
